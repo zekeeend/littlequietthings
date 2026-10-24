@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connecting… · Little Quiet Things</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Connecting TikTok…</h1>
+  <p class="small">Handing the login back to Faceless Studio on your computer. If nothing happens, make sure the
+     dashboard is running and try again.</p>
+</main>
+<script>
+  // TikTok only allows https return addresses, so it lands here first; this page passes the one-time code
+  // to the Faceless Studio dashboard running on this computer.
+  location.replace("http://127.0.0.1:5000/tiktok/callback" + location.search);
+</script>
+</body>
+</html>
